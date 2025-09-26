@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Futuremakers Full Stack Evaluation**
 
-## Getting Started
+## Submission
 
-First, run the development server:
+- a github repo
+- a vercel deployment link
+- reply back to [tanapruk@futuremakers.co.th](mailto:tanapruk@futuremakers.co.th)
+    - with following format
+    - Here is the test results
+        - `{name} {surname}`
+        - `{github link}`
+        - `{vercel public link}`
+    - Highlights
+        - `{bullets on what you want to emphasize}`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Required Stacks
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Use `nextjs` to create a `typescript` application named `search-pokemon` .
+- communicate between frontend and backend through `graphql`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Details
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- The search-pokemon application will use a [pokemon graphql api](https://wayfair.github.io/dociql/) hosted [here](https://graphql-pokemon2.vercel.app/) as a datasource.
+- The Pokemon interface should account for pokemon attacks and evolutions as described by the schema definitions.
+- Make use of the [Graphiql Debugger](https://graphql-pokemon2.vercel.app/) when working with the api, it will make building your queries much easier.
+- A search input component that searches the pokemon api by name. This component should also read the state of a search query param.
+- A result component that displays all of information about the searched pokemon or a not found view.
+- The pokemon result should also contain that attacks and evolutions of that pokemon.
+- Clicking on the name of an evolution should update the search query param in the url and show the result of the evolution.
+- There is no design requirement, but all results should be easy to read and well organized.
+    - *to let us know what kind of developer you are*
+- nextjs, react, apollo optimization
+    - utilize caching
+    - use of path param and nextjs routing
+    - use of static optimization
+    - use of react library to optimize performance
+    - to
 
-## Learn More
+## Test (optional)
 
-To learn more about Next.js, take a look at the following resources:
+- In the same application create a test that will be run by the included [jest framework](https://jestjs.io/).
+- Create test mocks for Bulbasaur, Charmander, and Squirtle pokemon.
+- Write a test suite that assert that each pokemon is the correct type (Grass, Fire, Water).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Criteria
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Ability to understand requirements
+- Your overall web development skills. (setting up projects, structure the folders, typescript)
+- Your ability to utilize the libraries and frameworks. E.g., utilize nextjs and its caching. Use of react Suspense.
